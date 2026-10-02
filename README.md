@@ -3,7 +3,7 @@
 プロフェッショナルWebプログラミング Laravel改訂版 学習用リポジトリ
 
 ## 始め方
-
+次ページから
 ### ダウンロード
 
 [https://github.com/kubotak-is/pwp-laravel/archive/refs/heads/main.zip](https://github.com/kubotak-is/pwp-laravel/archive/refs/heads/main.zip)
@@ -53,3 +53,22 @@ code .
 
 - [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
 - [Laravel](https://marketplace.visualstudio.com/items?itemName=laravel.vscode-laravel)
+
+始める時
+sail up -d 　ドッカー開いてから
+sail down
+ポート番号注意　3306使っているよ
+
+# 勉強　知識
+
+## DB関連
+sail環境だと sail内に同梱されているMySQLと言うデータベースを使用する
+スキーマ：データベースの構造を表現するもの
+マイグレーション：スキーマのバージョン管理のようなもの
+sail artisan make:migration create_tweets_tableのようにすると作れる
+このマイグレーションファイルを拡張して好きなようにすきーまを定義していく
+
+マイグレーションは「実行済みフラグ」を見て動く — 中身を書き換えても再実行はされない
+Schema::createとSchema::tableの使い分け — 新規作成はcreate、既存テーブルへの追加はtable
+開発中はmigrate:freshが安全策 — データ消失OKなら迷わずこれ
+ファイル作成後は中身を確認してから実行 — 空のup()のまま流さない
