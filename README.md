@@ -3,7 +3,7 @@
 プロフェッショナルWebプログラミング Laravel改訂版 学習用リポジトリ
 
 ## 始め方
-次ページから
+次67ページから
 ### ダウンロード
 
 [https://github.com/kubotak-is/pwp-laravel/archive/refs/heads/main.zip](https://github.com/kubotak-is/pwp-laravel/archive/refs/heads/main.zip)
@@ -72,3 +72,23 @@ sail artisan make:migration create_tweets_tableのようにすると作れる
 Schema::createとSchema::tableの使い分け — 新規作成はcreate、既存テーブルへの追加はtable
 開発中はmigrate:freshが安全策 — データ消失OKなら迷わずこれ
 ファイル作成後は中身を確認してから実行 — 空のup()のまま流さない
+
+
+Vue 勉強
+V-on @click みたいに省略する　状態を受け取る
+
+
+Domイベントが発生するにも
+キャプチャー　何かをクリックした時に対象の要素に向かっていく
+　ターゲット　もとの要素に到達する
+  バブリング　外側の対象の要素に戻っていく　
+
+ここを覚えておくとイベント修飾子
+prevent 要素を止める
+stop　 　親への伝達を止める
+こっちはリンクの移動などを止めない
+
+ほか
+dotleft 　　左をクリック
+dotright　　右をクリック
+ctrl shift cmdなど色々ある
